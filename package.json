@@ -1,6 +1,6 @@
 {
     "name": "@roundtables/whocalled",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Find the process and the arguments that called your nodejs process",
     "scripts": {
         "build": "tsc"
@@ -11,9 +11,8 @@
         "access": "public"
     },
     "files": [
-        "dist/index.js",
-        "dist/index.d.ts",
-        "dist/whocalled.js"
+        "dist/*.js",
+        "dist/index.d.ts"
     ],
     "devDependencies": {
         "@types/node": "^13.13.5",
