@@ -7,6 +7,9 @@
     },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "publishConfig": {
+        "access": "public"
+    },
     "files": [
         "dist/index.js",
         "dist/index.d.ts",
