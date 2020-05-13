@@ -10,7 +10,7 @@ export const windowsWhoCalled = (): Promise<string[]> => {
         const byLineStream = createInterface({ input: childProcess.stdout })
         let lineCount: number = 1
         byLineStream.on('line', line => {
-            if (lineCount === 2) { // Skip first line
+            if (lineCount > 1 && line) { // Skip first line
                 const lineBits = line.split(/\s/g)
                 resolve(lineBits)
                 return
