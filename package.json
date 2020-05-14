@@ -1,6 +1,6 @@
 {
     "name": "@roundtables/whocalled",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Find the process and the arguments that called your nodejs process",
     "scripts": {
         "build": "tsc"

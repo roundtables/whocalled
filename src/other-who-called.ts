@@ -15,7 +15,10 @@ export const otherWhoCalled = (): Promise<string[]> => {
                 return
             }
 
-            resolve(stdout.split(/\s/g).splice(1))
+            // Login shells are prefixed with a dash
+            // We want to remove that
+            const commandLine = stdout.replace(/^-/, '')
+            resolve(commandLine.split(/\s/g).splice(1))
         })
     })
 }
